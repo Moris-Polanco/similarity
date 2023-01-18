@@ -1,6 +1,5 @@
 # Import necessary libraries
 import streamlit as st
-import openai_secret_manager
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 import os
