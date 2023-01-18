@@ -1,4 +1,4 @@
 openai
 streamlit
-streamlitscikit-learn
 numpy
+scikit-learn
