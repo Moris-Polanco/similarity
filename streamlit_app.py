@@ -3,15 +3,10 @@ import openai
 import streamlit as st
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+import os
 
-# Set the API key
-openai.api_key = "your_api_key"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-# Create a function that uses GPT-3 to generate text
-def generate_text(prompt):
-    completions = openai.Completion.create(engine="text-davinci-002", prompt=prompt, max_tokens=1024, n=1,stop=None,temperature=0.5)
-    message = completions.choices[0].text
-    return message.strip()
 
 # Create a function to compare the input text and the generated text using multiple methods
 def compare_text(input_text, generated_text):
