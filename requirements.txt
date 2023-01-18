@@ -1,4 +1,4 @@
 openai
 streamlit
-sklearn.metrics.pairwise
+streamlitscikit-learn
 numpy
